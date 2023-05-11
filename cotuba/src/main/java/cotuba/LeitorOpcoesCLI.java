@@ -11,10 +11,10 @@ import java.util.Comparator;
 
 public class LeitorOpcoesCLI {
 
-    Path diretorioDosMD;
-    String formato;
-    Path arquivoDeSaida;
-    boolean modoVerboso = false;
+    private Path diretorioDosMD;
+    private String formato;
+    private Path arquivoDeSaida;
+    private boolean modoVerboso = false;
     public LeitorOpcoesCLI(String[] args) {
 
         try {
@@ -92,12 +92,16 @@ public class LeitorOpcoesCLI {
     }
 
     public Path getDiretorioDosMD() {
-        return null;
+        return diretorioDosMD;
     }
 
     public String getFormato() {
         return "pdf";
     }
+
+    public Path getArquivoDeSaida() {return arquivoDeSaida;}
+
+
 
 
 

@@ -41,7 +41,6 @@ public class Main {
     boolean modoVerboso = false;
 
     try {
-
       var opcoesCLI = new LeitorOpcoesCLI(args);
       diretorioDosMD = opcoesCLI.getDiretorioDosMD();
       formato = opcoesCLI.getFormato();
